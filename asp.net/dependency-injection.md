@@ -7,6 +7,7 @@ in the constructor; different objects can share dependency of a single object; i
 to test much easier. Some of the disadvantages are that like inheritance and interfaces by making code in different files more connected it can become difficult to understand and debug much easier if you’re not 
 careful, and it can lead to an increased number of unnecessary classes and interfaces. 
 When using an interface in the dependency injection you can use modular code on one class instead of needing modular code for that class.
+
   In the following example the user class is dependent to the IPrompter interface. 
 Each child of the IPropter can deliver the propts in a diferent language so depending on which prompter is sent to the user constructor the user will deliver propts in that language. This way we don't need to write a 
 user class for each language and can add a new language just by adding a new IPrompter class.
